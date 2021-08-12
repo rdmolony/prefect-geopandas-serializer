@@ -13,11 +13,11 @@ pip install prefect-geopandas-serializer
 
 From the `prefect` [docs](https://docs.prefect.io/core/):
 
-    Prefect offers a notion of task "checkpointing" that ensures that every time a task is successfully run, its return value is written to persistant storage based on the configuration in a Result object for the task.
+> Prefect offers a notion of task "checkpointing" that ensures that every time a task is successfully run, its return value is written to persistant storage based on the configuration in a Result object for the task.
 
-    The default setting in Prefect Core is that checkpointing is globally turned off, and the default setting in Prefect Cloud 0.9.1+ is that checkpointing is globally turned on. For more information, read the concepts documentation on [Results](https://docs.prefect.io/core/concepts/results.html#pipeline-persisted-results) and the setup tutorial on [Using Results](https://docs.prefect.io/core/advanced_tutorials/using-results.html).
+> The default setting in Prefect Core is that checkpointing is globally turned off, and the default setting in Prefect Cloud 0.9.1+ is that checkpointing is globally turned on. For more information, read the concepts documentation on [Results](https://docs.prefect.io/core/concepts/results.html#pipeline-persisted-results) and the setup tutorial on [Using Results](https://docs.prefect.io/core/advanced_tutorials/using-results.html).
 
-    To enable checkpointing for local testing, set the `PREFECT__FLOWS__CHECKPOINTING` environment variable to true.
+> To enable checkpointing for local testing, set the `PREFECT__FLOWS__CHECKPOINTING` environment variable to true.
 
 To persist geodata as a `parquet` file and enable caching use `GeoPandasSerializer` as a serializer when
 using `Result`:
